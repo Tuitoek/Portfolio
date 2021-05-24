@@ -1,0 +1,367 @@
+body {
+  width: 100%;
+  height: 100%;
+margin-top: 30px;
+}
+body::-webkit-scrollbar{
+  display: none;
+
+}
+
+.navbar-nav a{
+  font-family: 'Cantata One', serif;
+  display: inline-block;
+  padding: 20px;
+  font-size: 20px;
+  color: white;
+}
+
+.navbar{
+  position: fixed;
+  top:0;
+  width:100%;
+}
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+*/
+
+/* .about {
+  width: 500px;
+  height: 350px;
+  padding: 50px;
+  background-color: #A5243D;
+} */
+.about:hover {
+  transition: width 3s height 2s;
+  border: 1px solid white;
+  background: linear-gradient(white, white 50%, black 50%, black);
+  background-size: 100% 200%;
+}
+
+. .about {
+  position: absolute;
+  top: 50%;
+  white-space: nowrap;
+  overflow: hidden;
+  line-height: 220px;
+}
+
+nav ul a li:hover {
+  border: 1px solid white;
+  border-radius: 10px;
+  transition: 4s ease-in;
+  background-color: rgb(59, 2, 6);
+}
+
+.row .col-md-5 {
+  width: 500px;
+  height: 300px;
+  float: right;
+  background-color: #A5243D;
+  animation: pulse 3s ease infinite alternate;
+  transition: margin-left 0.5s ease;
+}
+
+.row .col-md-5:hover {
+  border: 1px solid white;
+}
+
+/* .m-3{
+  border-radius: 50%;
+  border-top-left-radius: 50% 50%;
+  border-top-right-radius: 50% 50%;
+  border-bottom-right-radius: 50% 50%;
+  border-bottom-left-radius: 50% 50%;
+  margin-left: 20px;
+} */
+#contacts {
+  color: white;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+#contacts h4 {
+  padding: 20px;
+}
+
+#contacts h4:hover {
+  border: 1px solid #A5243D;
+  border-radius: 60px;
+}
+
+#contacts h4 {
+  color: white;
+  text-decoration: none;
+}
+
+.container {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container .box {
+  margin-top: 10px;
+  position: relative;
+  width: 200px;
+  height: 100px;
+  border-radius: 30px;
+  ;
+  ;
+  box-sizing: border-box;
+  text-align: center;
+  margin: 0 10px;
+  background: #00171d;
+  overflow: hidden;
+  box-shadow: 0 0 0 2px rgba(0, 7, 10, 1);
+}
+
+.container .box .icon {
+  width: 100%;
+  height: 100%;
+  background: #00171d;
+  transition: 0.5s;
+}
+
+.container .box .icon .fa {
+  font-size: 25px;
+  line-height: 100px;
+  color: #0ff;
+}
+
+.container .box:hover .icon {
+  transform: scale(0);
+}
+
+.container .box .details {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #03a9f4;
+  transition: 0.5s;
+  transform: scale(2);
+  opacity: 0;
+}
+
+.container .box:hover .details {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.container .box .details h3 {
+  margin: 0;
+  padding: 0;
+  line-height: 100px;
+  font-size: 24px;
+  color: #fff;
+}
+
+.container .box .details:nth-child(2) .details {
+  background: #e91e63;
+}
+
+.container .box .details:nth-child(2) .details {
+  background: #607d8b;
+}
+#me{
+  width:350px;
+
+}
+@media screen and(max-width:480px) {
+  .container-fluid {
+    height: 100%;
+    width: 100%;
+  }
+ .box {
+    height: 20px;
+    width: 10px;
+    margin-left:0px;
+    display: flex;
+    justify-content: center;
+  }
+  #name{
+    width:100%;
+    height:100%;
+  }
+  #robotics{
+    width:100%;
+    height:100%;
+  }
+  footer {
+    display: flex;
+    justify-content: center;
+  }
+  .d-flex{
+    margin-left: 10px;
+  }
+  .img-responsive{
+    width:350px;
+  }
+  .flip-card {
+    background-color: transparent;
+    width: 350px;
+    height: 350px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+}
+/* Projects styling */
+.fancy-cards {
+  text-align: center;
+  margin: 80px auto;
+}
+
+.fancy-cards .fancy-card {
+  display: inline-block;
+  position: relative;
+  top: 40px;
+  left: 20px;
+  box-sizing: border-box;
+}
+
+.fancy-card .top,
+.fancy-card .middle,
+.fancy-card .bottom {
+  position: relative;
+  border-radius: 3px;
+  overflow: hidden;
+  width: 400px;
+  height: 400px;
+  transition: transform 300ms linear-out;
+}
+
+.fancy-card .top {
+  z-index: 3;
+  transform: scale(1.0);
+  transition: transform 300ms cubic-bezier(0.22, 0.61, 0.36, 1);
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0px 1px 3px rgba(25, 25, 25, 0.30);
+}
+
+.fancy-card .middle {
+  position: absolute;
+  background: #aaa;
+  top: 0px;
+  z-index: 2;
+  transform: rotate(0deg);
+  transition: transform 250ms cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.fancy-card .bottom {
+  position: absolute;
+  background: #ccc;
+  top: 0px;
+  z-index: 1;
+  transform: rotate(0deg);
+  transition: transform 250ms cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.fancy-card .caption {
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.75);
+  padding: 15px 10px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+}
+
+.fancy-card .caption .title {
+  color: #222;
+  margin: 0px 0px 15px 0px;
+  font-size: 1.4rem;
+}
+
+/*hovering*/
+.fancy-card:hover .top {
+  transform: scale(1.05);
+}
+
+.fancy-card:hover .middle {
+  transform: rotate(-7deg);
+  box-shadow: 1px 1px 2px rgba(74, 74, 74, 0.35);
+}
+
+.fancy-card:hover .bottom {
+  transform: rotate(7deg);
+  box-shadow: 1px 1px 2px rgba(113, 113, 113, 0.35);
+}
+
+.fancy-card:hover .button {
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border: 0px;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 350px;
+  height: 350px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color:white;
+  color:black;
+  font-family: 'Crimson Text', serif;
+  transform: rotateY(180deg);
+}
+.flipcard .button {
+  display: inline-block;
+  color: #333;
+  text-decoration: none;
+  border: solid 1px #555;
+  padding: 7px 13px;
+  background-color: transparent;
+  transition: all 300ms ease-in;
+}
+
+.flipcard-back .button:hover{
+    border: 1px solid #A5243D;
+}
+
+#project_title{
+  padding-left:4.0em;
+}
+.img-responsive{
+  width:400px;
+  height:300px;
+}

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="index.css">
+  <script type="text/javascript" src="index.js">
+  </script>
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cantata+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Ultra" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Arapey" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+  <title>Tuitoek</title>
+</head>
+
+<body>
+
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+      <button style="color:white;"type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+          <span style="color:white;"class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav">
+              <a href="#home" class="nav-item nav-link active">Home</a>
+              <a href="#about" class="nav-item nav-link">About</a>
+              <a href="#projects" class="nav-item nav-link">Projects</a>
+              <a href="#skills" class="nav-item nav-link ">Skills</a>
+          </div>
+    
+      </div>
+  </nav>
+  <section id="home">
+    <div class="row">
+     
+      <div id="name" class="col-md-8 bg-black" >
+        <br>
+        
+        <!-- <nav>
+          <ul>
+            <a style="text-decoration: none;" href="#">
+              <li>HOME</li>
+            </a>
+            <a style="text-decoration: none;" href="#projects">
+              <li>PROJECTS</li>
+            </a>
+            <a style="text-decoration: none;" href="Skills/index.html">
+              <li>SKILLS</li>
+            </a>
+            <a style="text-decoration: none;" href="#contacts">
+              <li>CONTACTS</li>
+            </a>
+          </ul>
+        </nav> -->
+        <center>
+          <div class="about" style="margin-left:15px;margin-top:100px;transition: 4s ease-in;animation:stretch 1.5s ease-out 0s alternate infinite none running;">
+            <h1 class="text-center" style="font-family: 'Cinzel', serif;color:black;transition: 4s ease-in;">HI , I'M</h1>
+            <h3 style="font-family: 'Abril Fatface', cursive;font-size:70px;color:black;margin-top:30px;transition: 4s ease-in;"> Sarah Tuitoek</h3>
+          </div>
+          <div id="robotics">
+            <!-- <h2 style="font-family: 'Abril Fatface', cursive;font-size:60px;">ABOUT ME</h2> -->
+          <br>
+          <br>
+          <p style="font-size:20px;font-family: 'Playfair Display', serif;">I love robotics.I love every aspect of technology.I love love music.Music is art  <br> which impacts people in various ways.I am a programmer who is really musical.</p>
+          </div>
+          
+        </center>
+
+      </div>
+      <div id="robotics" class="col-md-4" style="@media screen and(min-width: 480px){width:100%;height:100%}">
+        <div style="margin-top:100px;">
+          <img id="me" src="WhatsApp Image 2021-05-24 at 14.37.03.jpeg" alt="">
+  
+        </div>
+        <br>
+      </div>
+
+    </div>
+  </section>
+    </div>
+    <div align="center">
+      <div id="projects">
+        <h3 class="project_title" style="font-family: 'Cinzel', serif;font-size:70px;color:black;">Projects</h3><br>
+        <div class="row" >
+          <div class="col-md-6">
+            <div align="center" style="display:flex;justify-content:space-evenly;">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img class="img-responsive" src="Projects/clone.png" >
+                    <div id="overlay" onclick=on()>
+                      <div id="text">
+                        <h2 id="names" style="color:black;">CloneGram</h2>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flip-card-back">
+                    <h1 style="color:black;">CloneGram</h1>
+                    <p style="color:black;">It is a django web clone of instagram that enables people to authenticate and login as users.Users can post pictures and view other people's pictures.A user can also change their profile status.</p>
+  
+                    <br>
+                    <br>
+                    <a style="border: 1px solid #A5243D;text-decoration:none;color:black;font-size:20px;padding: 20px;" target="_blank" href="https://tuitoekgram.herokuapp.com" class="button">Find Out </a>
+                  </div>
+                </div>
+              </div>
+              
+</div>
+            </div>
+            <div class="col-md-6">
+              <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img class="img-responsive" src="Projects/github.png">
+                  <div id="text">
+                    <h2 id="names" style="color:black;">GithubSearch</h2>
+                  </div>
+                  <br>
+                  <br>
+                </div>
+                <div class="flip-card-back">
+                  <h1 style="color:black;">GithubSearch</h1>
+                  <p style="color:black;">It is an angular web application that enables people to find github users and view their profile and the list ofrepositories that they have.It also enables one to <br>find repositories</p>
+                  <br>
+                  <br>
+                  <a style="border: 1px solid #A5243D;text-decoration:none;color:black;font-size:20px;padding: 20px;" target="_blank" href="https://tuitoek.github.io/Github-search/" class="button">Find Out </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img class="img-responsive" src="Projects/kneighbour.png">
+                  <div id="text">
+                    <h2 id="names" style="color:black">Kneighbourhood</h2>
+                  </div>
+                  <br>
+                  <br>
+                </div>
+                <div class="flip-card-back">
+                  <h1 style="color:black;">Kneighbour</h1>
+                  <p style="color:black;">It is a django web app that allows on to join a neighbourhood after <br>authentication and view all the events coming up.A user can <br> also find businesses and find businesses.A user can also <br>change
+                    their
+                    profile picture.</p>
+                  <br>
+                  <br>
+                  <a style="border: 1px solid #A5243D;text-decoration:none;color:black;font-size:20px;padding: 20px;" target="_blank" href="https://tuitoek.github.io/Github-search/" class="button">Find Out </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img class="img-responsive" src="Projects/triangle.png">
+                  <div id="text">
+                    <h2 id="names" style="color:black;">TriangleTracker<h2>
+                  </div>
+                  <br>
+                  <br>
+                </div>
+                <div class="flip-card-back">
+                  <h1 style="color:black;">Triangle Tracker</h1>
+                  <p style="color:black;">It is an web application made by HTML ,CSS and Javascript.It is used for tracking if inputs entered by a user can make a triangle. </p>
+                  <br>
+                  <br>
+                  <a style="border: 1px solid #A5243D;text-decoration:none;color:black;font-size:20px;padding: 20px;" target="_blank" href="https://tuitoek.github.io/Triangle/" class="button">Find Out </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+            
+        </div>
+         
+             
+          </div>
+  
+  
+        </div>
+    <br><br>
+    
+  <div class="text-center" id="skills" style="color:black; font-size:1.25em;">
+  <h3 class="project_title" style="font-family: 'Cinzel', serif;font-size:70px;color:black;">Skills</h3><br>
+
+  <div class="row">
+    <div class="col-md-3">
+      <div class="panel" align="center">
+          <i class="fab fa-python fa-lg"></i>
+          <p>Python</p>
+      </div>
+  </div>
+  <div class="col-md-3">
+      <div class="panel" align="center">
+          <i class=" fab fa-html5 fa-lg"></i>
+          <p>Html5</p>
+      </div>
+  </div>
+  <div class="col-md-3">
+      <div class="panel" align="center">
+          <i class="fab fa-angular fa-lg"></i>
+          <p>Angular</p>
+      </div>
+  </div>
+ 
+    <div class="col-md-3">
+      <div class="panel" align="center">
+          <i class="fab fa-css3 fa-lg"></i>
+          <p>Css3</p>
+      </div>
+  </div>
+  <div class="col-md-3">
+      <div class="panel" align="center">
+          <i class="fab fa-linux fa-lg"></i>
+          <p>Linux</p>
+      </div>
+  </div>
+  <div class="col-md-3">
+      <div class="panel" align="center">
+          <i class="fa fa-database fa-lg"></i>
+          <p>Database</p>
+      </div>
+  </div>
+
+  <div class="col-md-3">
+      <div class="panel" align="center">
+          <i class="fa fa-cloud fa-lg"></i>
+          <p>Cloud</p>
+      </div>
+  </div>
+  <div class="col-md-3">
+      <div class="panel" align="center">
+          <i class="fab fa-node-js fa-lg"></i>
+          <p>NodeJs</p>
+      </div>
+  </div>
+  <div class="col-md-3">
+      <div class="panel" align="center">
+          <i class="fab fa-js fa-lg"></i>
+          <p>Js</p>
+      </div>
+  </div>
+  <div class="col-md-3">
+      <div class="panel" align="center">
+          <i class="fab fa-git fa-lg"></i>
+          <p>Git</p>
+      </div>
+  </div>
+  </div>
+  
+  
+</div></div>
+
+
+    <footer>
+
+      <div class="row d-flex justify-content-center" style="height:100px;;">
+              <br>
+              <br>
+
+                <a target="_blank" href="https://www.linkedin.com/in/sarah-tuitoek">
+                  <div  class="icon mr-4 mt-5"><i style="color:black;font-size:40px;" class="fab fa-linkedin-in"></i></div>
+                </a>
+                <a target="_blank" href="https://www.google.com/gmail/">
+                  <div  class="icon mr-4 mt-5"><i style="color:black;font-size:40px;" class="fa fa-envelope" aria-hidden="true"></i></div>
+                </a>
+
+                <a target="_blank" href="https://github.com/Tuitoek/">
+                  <div s class="icon mt-5"><i style="color:black;font-size:40px;" class="fab fa-github"></i></div>
+                </a>
+
+            </div>
+
+
+    </footer>
+
+
+
+</div>
+  </div>
+</div>
+  <script type="text/javascript">
+    function on() {
+      document.getElementById("overlay").style.display = "block";
+    }
+
+    function off() {
+      document.getElementById("overlay").style.display = "none";
+    }
+  </script>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+
+</html>
